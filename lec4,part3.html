@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Section Layout</title>
+  <!-- Bootstrap CSS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+  </script> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .section {
+      width: 25%;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ddd;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .section p, .section abbr, .section pre {
+      margin-bottom: 15px;
+    }
+    .table {
+      width: 100%;
+    }
+    blockquote {
+      padding: 10px;
+      border-left: 5px solid #ccc;
+      margin-left: 0;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <!-- First Section: Text Components -->
+  <div class="section">
+    <h4>Text Components</h4>
+    <p>This is a paragraph tag to demonstrate text components.</p>
+    <abbr title="Hypertext Markup Language">HTML</abbr> is the standard markup language for documents designed to be displayed in a web browser.
+    <pre>
+      Code blocks can be displayed using the <pre> tag.
+      Example:
+      function hello() {
+        console.log("Hello, world!");
+      }
+    </pre>
+    </pre>
+  </div>
+
+  <!-- Second Section: Table -->
+  <div class="section">
+    <h4>Table with Case</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Case</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lowercase</td>
+          <td>hello world</td>
+        </tr>
+        <tr>
+          <td>Uppercase</td>
+          <td>HELLO WORLD</td>
+        </tr>
+        <tr>
+          <td>Capitalize</td>
+          <td>Hello World</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Third Section: Text Justified -->
+  <div class="section">
+    <h4>Justified Text</h4>
+    <p class="text-justify">
+      This text is justified. Justified text aligns both the left and right margins, creating a clean and formal appearance in paragraphs. It is often used in newspapers and books.
+    </p>
+  </div>
+
+  <!-- Fourth Section: Blockquote -->
+  <div class="section">
+    <h4>Blockquote</h4>
+    <blockquote class="blockquote">
+      "The only limit to our realization of tomorrow is our doubts of today." 
+      — Franklin D. Roosevelt
+    </blockquote>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
